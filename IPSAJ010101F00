@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+    <title>EagleAIS</title>
+    
+    <sec:scrfMetaTags/>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="expires" content="-1" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    	
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+	<meta name="_csrf" content="e4e26f4a-c45f-40a1-a1f1-602ee88e06d4"/>
+
+	<!-- CSS common List -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="/common/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	
+		<link rel="stylesheet" type="text/css" href="/common/lib/jquery-ui-1.12.1/jquery-ui.css" />
+	
+		<link rel="stylesheet" type="text/css" href="/common/lib/jquery.jqGrid-4.4.3/css/ui.jqgrid.css" />
+	
+		<link rel="stylesheet" type="text/css" href="/common/lib/bootstrap/bootstrap.css" />
+	
+		<link rel="stylesheet" type="text/css" href="/common/css/eagleais.css" />
+	
+		<link rel="stylesheet" type="text/css" href="/common/css/header.css" />
+	
+	
+	<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/common/css/ie7.css"><![endif]--> 
+	<!--[if IE 8]><link type="text/css" rel="stylesheet" href="/common/css/ie8.css"><![endif]-->
+	
+	<!--CSS view List -->
+	
+	
+	<!-- <link rel="stylesheet" type="text/css" href="/biz/css/sis/IPSCO130101F01.css"/> -->
+	<link rel="stylesheet" type="text/css" href="/biz/css/common/Datepicker.css"/>
+	<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/common/css/ie7.css"><![endif]--> 
+
+	<!-- JS common List -->
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+	<script src="/common/js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+	<script src="/common/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	
+	
+		<script type="text/javascript" src="/common/lib/jquery/jquery-3.5.1.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/jquery/jquery.form.min.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/jquery/jquery.mask.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/jquery.jqGrid-4.4.3/js/jquery.jqGrid.min.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/jquery.jqGrid-4.4.3/src/i18n/grid.locale-kr.js"></script>
+	
+		<script type="text/javascript" src="/common/lib/bootstrap/bootstrap.js"></script>
+	
+		<script type="text/javascript" src="/common/js/common.js"></script>
+	
+	
+	<script>
+	// jQuery import 바로아래에 넣어 주면 됩니다.
+	// Cannot read property 'msie' of undefined 에러 나올때
+	jQuery.browser = {};
+	(function () {
+	    jQuery.browser.msie = false;
+	    jQuery.browser.version = 0;
+	    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+	        jQuery.browser.msie = true;
+	        jQuery.browser.version = RegExp.$1;
+	    }
+	})();
+	</script>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+		var contextPath = "/audit";
+		var csrfHeader = "_csrf";
+		var csrfToken = "e4e26f4a-c45f-40a1-a1f1-602ee88e06d4";
+	</script>
+	
+	
+	<script type="text/javascript">
+		var isLogin = false;
+		
+		
+		jQuery.browser = {};
+		   (function () {
+		       jQuery.browser.msie = false;
+		       jQuery.browser.version = 0;
+		       if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+		           jQuery.browser.msie = true;
+		           jQuery.browser.version = RegExp.$1;
+		       }
+		   })();
+		
+		
+	</script>
+</head>	
+
+<body class="">
+<input type="hidden" id="csrf_token" name="csrf_token" value="e4e26f4a-c45f-40a1-a1f1-602ee88e06d4"/>
+
+<noscript class="noScriptTitle">자바스크립트를 지원하지 않는 브라우저에서는 일부 기능을 사용하실 수 없습니다.</noscript>
+
+<div class="header" id="header">
+	<div class="menu">
+			<!-- 1depth menu -->			
+			<div class="dropdown">
+				<a class="dropbtn" href="#">상시모니터링</a>						
+				<div class="menu-content">
+					<div class="dropdown-content">
+						<table class="tblmenu">
+							<thead>
+								<tr>
+								<!-- 2depth menu -->																																	
+									<th>														
+										<a href="javascript:notWorking()">상시모니터링 현황</a>																											
+									</th>																						
+									<th>														
+										<a href="javascript:notWorking()">상시모니터링 실시</a>														
+									</th>												
+									<th>														
+										<a href="javascript:notWorking()">사후관리</a>														
+									</th>				
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 3depth menu -->
+								<td>
+									<a href="/audit/sis/SISN0204/IPSOI010101F00.ts">상시모니터링 메인</a>	
+									</td><td>
+									<a href="/audit/sis/SISN0204/IPSOI040101F00.ts">상시모니터링 점검대상목록 조회</a>
+									</td><td>
+									<a href="/audit/sis/SISN0204/IPSOI070101F00.ts">지적사항 및 정리 목록 조회</a>
+								</td>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<a class="dropbtn" href="#">자체점검</a>						
+				<div class="menu-content">
+					<div class="dropdown-content">
+						<table class="tblmenu">
+							<thead>
+								<tr>
+									<!-- 2depth menu -->
+									<th>
+										<a href="/audit/sis/SISN0208/IPSSN010101F00.ts">자체점검현황</a>
+									</th>
+									<th>
+										<a href="javascript:notWorking()">자체점검 실시</a>
+									</th>
+									<th>
+										<a href="javascript:notWorking()">사후관리</a>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 3depth menu -->
+								<tr>
+									<td>
+										<a href="/audit/sis/SISN0208/IPSSN010101F00.ts">자점감사 메인</a>
+										<a href="/audit/sis/SISN0208/IPSSN020101F00.ts">일일점검 현황 조회</a>
+										<a href="/audit/sis/SISN0208/IPSSN020102F00.ts">월별점검 현황 조회</a>
+										<a href="/audit/sis/SISN0208/IPSSN020103F00.ts">특명점검 현황 조회</a>
+										<a href="/audit/sis/SISN0208/IPSSN020104F00.ts">결과보고서 현황 조회</a>
+									</td>
+									<td>
+										<a href="/audit/sis/SISN0206/IPSSN060101F00.ts">일일점검</a>
+										<a href="/audit/sis/SISN0207/IPSSN060102F00.ts">월별점검</a>
+										<a href="/audit/sis/SISN0209/IPSSN060103F00.ts">특명점검</a>
+									</td>
+									<td>
+										<a href="/audit/sis/SISN0603/IPSSN120101F00.ts">지적사항 및 정리 현황 조회</a>
+										<a href="/audit/sis/SISN0604/IPSIC010101F00.ts">지점담당자 관리</a>
+										<a href="/audit/sis/SISN0605/IPSSN130101F00.ts">결과보고서조회</a>
+										<a href="/audit/sis/SISN0606/IPSSN140101F00.ts">종합보고서조회</a>
+									</td>
+								</tr>																						
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<a class="dropbtn" href="#">시스템관리</a>						
+				<div class="menu-content">
+					<div class="dropdown-content">
+						<table class="tblmenu">
+							<thead>
+								<tr>
+									<!-- 2depth menu -->
+									<th>
+										<a href="javascript:notWorking()">업무공통</a>
+									</th>
+									<th>														
+										<a href="javascript:notWorking()">시스템관리</a>
+									</th>	
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 3depth menu -->
+								<tr>
+									<td>
+										<a href="/audit/sis/OISG0601/IPSCO100101F00.ts">자체점검 항목 관리</a>
+										<a href="/audit/sis/OISG0612/IPSCO110101F00.ts">상시모니터링 지표 관리</a>
+										<a href="/audit">공지사항</a>													
+									</td>
+									<td>
+										<a href="/audit/ois/OISG0701/IPSSG030201F00.ts">사용자그룹 관리</a>
+										<a href="/audit/ois/OISG0702/IPSSG030401F00.ts">사용자그룹권한 관리</a>
+										<a href="/audit/ois/OISG0703/IPSSG010101F00.ts">메뉴 관리</a>
+										<a href="/audit/ois/OISG0704/IPSSG020101F00.ts">프로그램 관리</a>
+										<a href="/audit/ois/OISG0706/IPSSG040101F00.ts">공통코드 관리</a>
+										<a href="/audit/ois/OISG0707/IPSSG060101F00.ts">에러메세지 관리</a>
+										<a href="/audit/ois/OISG0711/IPSCO030101F00.ts">메뉴얼 관리</a>
+										<a href="/audit/ois/OISG0602/IPSCO070101F00.ts">감사항목 관리</a>	
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>			
+	</div>
+	
+	<div class="login-info" style="display: absolute; width: 200px; height:40px;color: #fff;margin-top:-17px; margin-left: 1070px; text-algin: center">
+		영업부 <br>
+		<form id="frmLogout" action="/audit/gate/sis/logout" method="post">
+			<input type="hidden" name="_csrf" value="e4e26f4a-c45f-40a1-a1f1-602ee88e06d4" />
+			정태성 <a href="#" id="btnLogout" style="color: #efefef; color:#ffff00; display: inline-block;text-align: center;">Logout</a>
+		</form>		
+	</div>
+</div>
+
+<script language="javascript">
+	$('#btnLogout').click(function(){
+		$('#frmLogout').submit();
+	});
+</script>
+
+	<!-- 지표 등록(감사) -->
+	<div class="container-popup">
+	
+		<div class="title">
+			상세계획 등록(IPSAJ010101F00)   팝업 Size width: 1200px ~ 
+		</div>
+	
+		<div class="condition">
+			<form id="frmSelect" method="post">
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+				<table class="table table-bordered">
+					<colgroup>
+						<col width="11%">
+						<col width="22.3%">
+						<col width="11%">
+						<col width="22.3%">
+						<col width="11%">
+						<col width="22.3%">
+					</colgroup>
+					<tr>
+						<th>감사유형</th>
+						<td>
+							<select class="form-control mr5 w65"  id="point_indi_dis_cd" name="point_indi_dis_cd">
+								<option value="">전체</option>
+								<option value="Y" >Y</option>
+								<option value="N" >N</option>								
+							</select>				
+						</td>
+						<th>부서</th>
+						<td>
+							<div class="input-group">
+								<input type="text" id="br_cd" class="w40 mr5" name="br_cd" placeholder="" aria-label="" aria-describedby="">
+								<input type="text" id="br_cd" class="w40 mr5" name="br_cd" placeholder="" aria-label="" aria-describedby="">
+								<a class="btn btn-info chargeMarket" id="chargeMarket" href="#" onclick="fnchargeMarket();">검색</a>
+							</div>				
+						</td>
+						<th>감사 실시기간</th>
+						<td>
+							<input type="text" id="from_dt" name="from_dt" value="20201221" onchange="fn_calChange(this.id)" class="form-control ymd" title="시작일" />
+							 ~ 
+							<input type="text" id="end_dt" name="end_dt" value="20201221" onchange="fn_calChange(this.id)" class="form-control ymd" title="종료일"/>
+							<a href="#" class="img" id="" name=""><img src="/common/images/calendar.png"></a>				
+						</td>
+					</tr>
+					<tr>
+						<th>특별감사 실시사유</th>
+						<td>
+							<select class="form-control mr5 w65"  id="point_indi_dis_cd" name="point_indi_dis_cd">
+								<option value="">전체</option>
+								<option value="Y" >Y</option>
+								<option value="N" >N</option>								
+							</select>			
+						</td>
+						<th>서면구분</th>
+						<td>
+							<select class="form-control mr5 w65"  id="point_indi_dis_cd" name="point_indi_dis_cd">
+								<option value="">전체</option>
+								<option value="Y" >Y</option>
+								<option value="N" >N</option>								
+							</select>			
+						</td>
+						<th>감사 대상기간</th>
+						<td>
+							<input type="text" id="from_dt" name="from_dt" value="20201221" onchange="fn_calChange(this.id)" class="form-control ymd" title="시작일" />
+							 ~ 
+							<input type="text" id="end_dt" name="end_dt" value="20201221" onchange="fn_calChange(this.id)" class="form-control ymd" title="종료일"/>
+							<a href="#" class="img" id="" name=""><img src="/common/images/calendar.png"></a>										
+						</td>
+					</tr>
+				</table>				
+			</form>
+		</div>
+		
+		<div class="sub-title">
+			<img src="/common/images/sub_title_img_001.gif"/>
+			중점점검사항
+			<div class="command">
+				<a href="#" class="btn btn-outline-secondary btn-xs" id="btnSelect"> 추가 </a>
+				<a href="#" class="btn btn-outline-secondary btn-xs" id="btnSelect"> 삭제 </a>	 
+			</div>
+		</div>
+		
+		<table class="table table-bordered">
+			<tr>
+				<td>
+					<input class="w100" type="text" id="br_cd" name="br_cd" placeholder="" aria-label="" aria-describedby="">				
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea rows="3" class="form-control idex_dsc" id="idex_dsc" name="idex_dsc" >${selectAudItm.IDEX_DSC}</textarea>				
+				</td>
+			</tr>
+		</table>		
+		
+		<div class="command">
+			<button href="#" class="btn btn-outline-secondary btn-xs mr3" id="btnClose">등록</button>
+			<button href="#" class="btn btn-outline-secondary btn-xs" id="btnClose">닫기</button>
+		</div>
+					
+	</div>
+</div>
+
+<!-- JS view List -->
+
+	<script type="text/javascript" src="/biz/js/sis/IPSSN020101F00.js"></script>
+
+</body>
+</html>
