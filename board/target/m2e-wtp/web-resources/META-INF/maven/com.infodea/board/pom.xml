@@ -135,12 +135,18 @@
 		</dependency>
 
         <!-- spring-test -->
-        <dependency>
+<!--         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${org.springframework-version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+			<scope>Test</scope>
+		</dependency>                
      
         <!-- log4jdbc-log4j2-jdbc4 -->
         <dependency>
